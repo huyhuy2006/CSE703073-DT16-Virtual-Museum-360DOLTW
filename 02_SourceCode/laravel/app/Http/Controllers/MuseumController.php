@@ -29,7 +29,7 @@ class MuseumController extends Controller
             ])
             ->orderBy('sort_order')
             ->orderBy('id')
-            ->get();
+            ->paginate(6)->withQueryString();
 
         return view('museums.index', [
             'museums' => $museums,

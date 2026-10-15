@@ -1,0 +1,52 @@
+Bang	ThuTu	Truong	Kieu	ChoPhepNull	MacDinh	Khoa	Y Nghia Nghiep Vu
+TABLE_NAME	ORDINAL_POSITION	COLUMN_NAME	COLUMN_TYPE	IS_NULLABLE	IFNULL(COLUMN_DEFAULT, '')	COLUMN_KEY	IFNULL(COLUMN_COMMENT, '')
+cache	1	key	varchar(255)	NO		PRI
+cache	2	value	mediumtext	NO
+cache	3	expiration	int	NO
+cache_locks	1	key	varchar(255)	NO		PRI
+cache_locks	2	owner	varchar(255)	NO
+cache_locks	3	expiration	int	NO
+failed_jobs	1	id	bigint unsigned	NO		PRI
+failed_jobs	2	uuid	varchar(255)	NO		UNI
+failed_jobs	3	connection	text	NO
+failed_jobs	4	queue	text	NO
+failed_jobs	5	payload	longtext	NO
+failed_jobs	6	exception	longtext	NO
+failed_jobs	7	failed_at	timestamp	NO	CURRENT_TIMESTAMP
+job_batches	1	id	varchar(255)	NO		PRI
+job_batches	2	name	varchar(255)	NO
+job_batches	3	total_jobs	int	NO
+job_batches	4	pending_jobs	int	NO
+job_batches	5	failed_jobs	int	NO
+job_batches	6	failed_job_ids	longtext	NO
+job_batches	7	options	mediumtext	YES
+job_batches	8	cancelled_at	int	YES
+job_batches	9	created_at	int	NO
+job_batches	10	finished_at	int	YES
+jobs	1	id	bigint unsigned	NO		PRI
+jobs	2	queue	varchar(255)	NO		MUL
+jobs	3	payload	longtext	NO
+jobs	4	attempts	tinyint unsigned	NO
+jobs	5	reserved_at	int unsigned	YES
+jobs	6	available_at	int unsigned	NO
+jobs	7	created_at	int unsigned	NO
+migrations	1	id	int unsigned	NO		PRI
+migrations	2	migration	varchar(255)	NO
+migrations	3	batch	int	NO
+password_reset_tokens	1	email	varchar(255)	NO		PRI
+password_reset_tokens	2	token	varchar(255)	NO
+password_reset_tokens	3	created_at	timestamp	YES
+sessions	1	id	varchar(255)	NO		PRI
+sessions	2	user_id	bigint unsigned	YES		MUL
+sessions	3	ip_address	varchar(45)	YES
+sessions	4	user_agent	text	YES
+sessions	5	payload	longtext	NO
+sessions	6	last_activity	int	NO		MUL
+users	1	id	bigint unsigned	NO		PRI
+users	2	name	varchar(255)	NO
+users	3	email	varchar(255)	NO		UNI
+users	4	email_verified_at	timestamp	YES
+users	5	password	varchar(255)	NO
+users	6	remember_token	varchar(100)	YES
+users	7	created_at	timestamp	YES
+users	8	updated_at	timestamp	YES

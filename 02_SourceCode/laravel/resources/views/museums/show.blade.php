@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ $locale }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $museum->translations->first()?->name ?? $museum->slug }} - {{ $locale === 'vi' ? 'Bảo tàng ảo' : 'Virtual Museum' }}</title>
-    <style>
+@extends('layouts.museum')
+
+@section('title', $locale === 'vi' ? 'Chi tiết bảo tàng | DT-16' : 'Museum details | DT-16')
+
+@section('styles')
+<style>
         * { box-sizing: border-box; }
         body {
             margin: 0;
@@ -51,9 +50,12 @@
             text-align: center;
             font-size: 14px;
         }
-    </style>
-</head>
-<body>
+
+</style>
+@endsection
+
+@section('content')
+
 <header>
     <a href="{{ route('museums.index', ['lang' => $locale]) }}">
         ← {{ $locale === 'vi' ? 'Trở về danh sách bảo tàng' : 'Back to museums' }}
@@ -141,5 +143,5 @@
 <footer>
     DT-16 — {{ $locale === 'vi' ? 'Bảo tàng ảo và tour tham quan 360°' : 'Virtual Museum and 360° Tours' }}
 </footer>
-</body>
-</html>
+
+@endsection

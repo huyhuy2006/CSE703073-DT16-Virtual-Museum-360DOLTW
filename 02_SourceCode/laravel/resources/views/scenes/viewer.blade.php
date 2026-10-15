@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ $lang }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $sceneTranslation?->title ?? $scene->slug }} - {{ $museumTranslation?->name ?? $museum->slug }}</title>
+@extends('layouts.museum')
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+@section('title', ($sceneTranslation?->title ?? $scene->slug) . ' - ' . ($museumTranslation?->name ?? $museum->slug))
 
-    <style>
+@section('styles')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+<style>
         :root {
             color-scheme: dark;
             --bg: #0b1220;
@@ -355,8 +351,10 @@
             .pnlm-hotspot.custom-hotspot { width: 44px !important; height: 44px !important; margin-left: -22px !important; margin-top: -22px !important; }
         }
     </style>
-</head>
-<body>
+@endsection
+
+@section('content')
+
 <header class="topbar">
     <div class="brand">
         {{ $museumTranslation?->name ?? $museum->slug }}
@@ -623,5 +621,5 @@
     })();
     </script>
 @endif
-</body>
-</html>
+
+@endsection

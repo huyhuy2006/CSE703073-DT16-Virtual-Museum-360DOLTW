@@ -1,33 +1,48 @@
-# Cau hinh rieng va bi mat
+# Secrets and local configuration
 .env
 .env.*
 !.env.example
+*.pem
+*.p12
+auth.json
 
-# Laravel
+# Laravel dependencies and generated assets
 /02_SourceCode/laravel/vendor/
 /02_SourceCode/laravel/node_modules/
 /02_SourceCode/laravel/public/build/
 /02_SourceCode/laravel/public/hot
+/02_SourceCode/laravel/public/storage
 /02_SourceCode/laravel/storage/*.key
+/02_SourceCode/laravel/.phpunit.result.cache
+
+# Laravel runtime files
+/02_SourceCode/laravel/storage/logs/*.log
+/02_SourceCode/laravel/storage/framework/cache/*
+/02_SourceCode/laravel/storage/framework/sessions/*
+/02_SourceCode/laravel/storage/framework/views/*
 
 # Python
+.venv/
 __pycache__/
 *.py[cod]
-.venv/
 
-# Bao cao kiem thu sinh tu dong
-/test-results/
-/coverage/
-/playwright-report/
+# Local database backups
+/03_Database/backup/
 
-# Tai nguyen panorama va audio lon
+# Large media files: keep originals outside Git
 /02_SourceCode/laravel/public/media/panoramas/
 /02_SourceCode/laravel/public/media/audio/
 
-# Tep tam va IDE
-Thumbs.db
-.DS_Store
-.idea/
-.vscode/
+# Temporary and generated files
 *.log
 *.bak
+*.zip
+*.mp4
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+
+# Keep shared VS Code extension recommendations
+.vscode/*
+!.vscode/extensions.json

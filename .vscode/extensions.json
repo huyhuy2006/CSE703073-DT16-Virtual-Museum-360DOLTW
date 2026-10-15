@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "onecentlin.laravel-blade",
+    "Vue.volar",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    "humao.rest-client"
+  ]
+}

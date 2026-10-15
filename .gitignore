@@ -1,9 +1,9 @@
-# Bi mat va cau hinh rieng
+# Cau hinh rieng va bi mat
 .env
 .env.*
 !.env.example
 
-# Laravel / PHP / Node
+# Laravel
 /02_SourceCode/laravel/vendor/
 /02_SourceCode/laravel/node_modules/
 /02_SourceCode/laravel/public/build/
@@ -12,14 +12,19 @@
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
 
-# Media lon: panorama tile va audio
+# Bao cao kiem thu sinh tu dong
+/test-results/
+/coverage/
+/playwright-report/
+
+# Tai nguyen panorama va audio lon
 /02_SourceCode/laravel/public/media/panoramas/
 /02_SourceCode/laravel/public/media/audio/
 
-# He thong / IDE
+# Tep tam va IDE
 Thumbs.db
 .DS_Store
 .idea/

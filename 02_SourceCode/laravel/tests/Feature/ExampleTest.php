@@ -2,18 +2,23 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     */
-    public function test_the_application_returns_a_successful_response(): void
+    public function test_homepage_redirects_to_vietnamese_museum_list(): void
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response
+            ->assertStatus(302)
+            ->assertRedirect(route('museums.index', ['lang' => 'vi']));
+    }
+
+    public function test_museum_list_page_returns_successful_response(): void
+    {
+        $response = $this->get('/museums?lang=vi');
+
+        $response->assertOk();
     }
 }

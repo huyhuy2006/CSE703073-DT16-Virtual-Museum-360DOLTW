@@ -1,0 +1,115 @@
+{
+  "museums": [
+    {
+      "code": "NATURALIS",
+      "slug": "naturalis-biodiversity-center",
+      "name": "Naturalis Biodiversity Center",
+      "country": "Netherlands",
+      "city": "Leiden",
+      "description_vi": "Bảo tàng và trung tâm nghiên cứu về đa dạng sinh học tại Leiden, Hà Lan.",
+      "description_en": "A biodiversity museum and research center in Leiden, the Netherlands.",
+      "website": "https://www.naturalis.nl/",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "code": "DHM",
+      "slug": "deutsches-historisches-museum",
+      "name": "Deutsches Historisches Museum",
+      "country": "Germany",
+      "city": "Berlin",
+      "description_vi": "Bảo tàng Lịch sử Đức tại Berlin, giới thiệu các chủ đề lịch sử Đức và châu Âu.",
+      "description_en": "The German Historical Museum in Berlin, presenting German and European history.",
+      "website": "https://www.dhm.de/",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "code": "RAMSWOERTHE",
+      "slug": "museum-house-rams-woerthe",
+      "name": "Museum House Rams Woerthe",
+      "country": "Netherlands",
+      "city": "Steenwijk",
+      "description_vi": "Địa điểm bảo tàng trong một ngôi nhà lịch sử tại Steenwijk, Hà Lan; cần xác minh thông tin địa điểm và nội dung trưng bày trước khi công bố.",
+      "description_en": "A museum location in a historic house in Steenwijk, the Netherlands; verify venue details and collections before publication.",
+      "website": "",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "scenes": [
+    {
+      "museum_code": "NATURALIS",
+      "code": "NAT-SCENE-001",
+      "slug": "canh-mau-01",
+      "title_vi": "Cảnh tham quan mẫu 01",
+      "title_en": "Sample Visit Scene 01",
+      "panorama_path": "media/panoramas/naturalis-biodiversity-center/canh-01/<BỔ_SUNG_PANORAMA_360>",
+      "panorama_source_url": "",
+      "panorama_license": "",
+      "is_verified": false
+    },
+    {
+      "museum_code": "DHM",
+      "code": "DHM-SCENE-001",
+      "slug": "canh-mau-01",
+      "title_vi": "Cảnh tham quan mẫu 01",
+      "title_en": "Sample Visit Scene 01",
+      "panorama_path": "media/panoramas/deutsches-historisches-museum/canh-01/<BỔ_SUNG_PANORAMA_360>",
+      "panorama_source_url": "",
+      "panorama_license": "",
+      "is_verified": false
+    },
+    {
+      "museum_code": "RAMSWOERTHE",
+      "code": "RAM-SCENE-001",
+      "slug": "canh-mau-01",
+      "title_vi": "Cảnh tham quan mẫu 01",
+      "title_en": "Sample Visit Scene 01",
+      "panorama_path": "media/panoramas/museum-house-rams-woerthe/canh-01/<BỔ_SUNG_PANORAMA_360>",
+      "panorama_source_url": "",
+      "panorama_license": "",
+      "is_verified": false
+    }
+  ],
+  "artifacts": [
+    {
+      "museum_code": "NATURALIS",
+      "code": "NAT-ART-001",
+      "title_vi": "Hiện vật mẫu về đa dạng sinh học",
+      "title_en": "Sample Biodiversity Artifact",
+      "description_vi": "Nội dung mẫu. Bổ sung tên hiện vật, thông tin khoa học và nguồn tham khảo đã xác minh.",
+      "description_en": "Sample content. Add the verified artifact name, scientific information, and reference source.",
+      "image_path": "",
+      "source_url": "",
+      "license_code": "",
+      "is_verified": false
+    },
+    {
+      "museum_code": "DHM",
+      "code": "DHM-ART-001",
+      "title_vi": "Hiện vật lịch sử mẫu",
+      "title_en": "Sample Historical Artifact",
+      "description_vi": "Nội dung mẫu. Bổ sung mô tả hiện vật dựa trên nguồn chính thức của bảo tàng.",
+      "description_en": "Sample content. Add an artifact description based on the museum's official sources.",
+      "image_path": "",
+      "source_url": "",
+      "license_code": "",
+      "is_verified": false
+    },
+    {
+      "museum_code": "RAMSWOERTHE",
+      "code": "RAM-ART-001",
+      "title_vi": "Hiện vật mẫu tại Rams Woerthe",
+      "title_en": "Sample Rams Woerthe Artifact",
+      "description_vi": "Nội dung mẫu. Cần xác minh hiện vật và bộ sưu tập thực tế trước khi sử dụng.",
+      "description_en": "Sample content. Verify the actual artifact and collection before use.",
+      "image_path": "",
+      "source_url": "",
+      "license_code": "",
+      "is_verified": false
+    }
+  ],
+  "generated_for": "BaoTang360",
+  "data_status": "initial_sample"
+}

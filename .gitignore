@@ -1,0 +1,28 @@
+# Bi mat va cau hinh rieng
+.env
+.env.*
+!.env.example
+
+# Laravel / PHP / Node
+/02_SourceCode/laravel/vendor/
+/02_SourceCode/laravel/node_modules/
+/02_SourceCode/laravel/public/build/
+/02_SourceCode/laravel/public/hot
+/02_SourceCode/laravel/storage/*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Media lon: panorama tile va audio
+/02_SourceCode/laravel/public/media/panoramas/
+/02_SourceCode/laravel/public/media/audio/
+
+# He thong / IDE
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.bak
